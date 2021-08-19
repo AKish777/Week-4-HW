@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Code Quiz</title>
+</head>
+<body>
+    <nav class="nav">
+        <button class="hscore">View Highscore</button>
+    </nav>
+
+    <h1>Code Quiz Challenge</h1>
+
+    <h4>Welcome to Code Quiz! Are you ready to test your knowledge? if so, click the "START" button! If you want to see who has the highest score simply click on "View Highscore"! Enjoy!</h4>
+
+    <div class="start">
+        <button class="start-button">START</button>
+    </div>
+
+    <script>
+
+        var timeleft = 15;
+        
+        var downloadTimer = setInterval(function function1(){
+          document.getElementById("countdown").innerHTML = timeleft + 
+        "&nbsp"+"seconds remaining";
+        
+          timeleft -= 1;
+          if(timeleft <= 0){
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = "Time is up!"
+          }
+        }, 1000);
+        
+            console.log(countdown);
+        
+        </script>
+
+</body>
+</html>

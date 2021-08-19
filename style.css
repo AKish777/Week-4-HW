@@ -1,0 +1,48 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-button{
+    color: white;
+    text-decoration: none;
+    background: rgb(141, 17, 141);
+    border-radius: 4px;
+    border: none
+}
+
+/* remove border around button */
+.hscore {
+    border: 0;
+    background-color: white;
+}
+
+.hscore:hover {
+    color: blue;
+}
+
+.start-button:hover {
+    transform: scale(1.06);
+}

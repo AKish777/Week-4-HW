@@ -27,10 +27,6 @@ THEN I can see the highest score
 
 ## Links
 
-Deployable Link: 
+Deployable Link: https://akish777.github.io/Week-4-hw/
 
-## Screenshots
 
-<img src="">
-<img src="">
-<img src="">

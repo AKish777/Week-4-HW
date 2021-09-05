@@ -1,48 +1,130 @@
-h1 {
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
-body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
+.highscore {
+    background: none;
+    border:0;
+    color: black;
+    transition: 0.2s;
+  }
 
-h4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-width: 200px;
-    max-width: 500px;
-    margin-right: auto;
-    margin-left: auto;
-}
+  .highscore:hover {
+        color: blue;
+  }
 
-.start {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.timer {
+    float: right;
+    padding-top: 0%;
+  }
 
-.start-button{
+  .rules {
+    text-align:center;
+    margin:0 auto;
+    margin-top: 150px;
+    min-width:100px;
+    max-width:700px;
+  }
+  
+  .start {
+    border-radius: 5px;
     color: white;
-    text-decoration: none;
-    background: rgb(141, 17, 141);
-    border-radius: 4px;
-    border: none
-}
+    background: rgb(83, 28, 134);
+    font-size: 15px;
+    transition: 0.2s;    
+  }
 
-/* remove border around button */
-.hscore {
-    border: 0;
-    background-color: white;
-}
+  .start:hover {
+      background: blueviolet;
+  }
+  
+  .score {
+    font-size: 21px;
+  }
+  
+  .list {
+    font-size: 20px;
+  }
 
-.hscore:hover {
-    color: blue;
-}
+  #question {
+    text-align: center;
+    margin-top: 200px;
+    font-size: larger;
+  }
+  
+.choices {
+    text-align:center;
+    margin:0 auto;
+    margin-top: 20px;
+    max-width: 150px;
+    }
 
-.start-button:hover {
-    transform: scale(1.06);
-}
+  .choices button {
+    margin-top: 10px;
+    background-color: rgb(83, 28, 134);
+    color: white;
+    border-radius: 5px;
+    background: rgb(83, 28, 134);
+    font-size: 15px;
+    transition: 0.2s; 
+  }
+
+  .choices button:hover {
+    background: blueviolet;
+  }
+
+  .submit {
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    background: rgb(83, 28, 134);
+    font-size: 15px;
+    transition: 0.2s;    
+  }
+
+  .submit:hover {
+    background: blueviolet;
+  }
+  
+  .clear {
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    background: rgb(83, 28, 134);
+    font-size: 15px;
+    transition: 0.2s;  
+  }
+
+  .clear:hover {
+    background: blueviolet;
+  }
+
+  .scorelist {
+    text-align:center;
+    margin:0 auto;
+    margin-top: 150px;
+    min-width:100px;
+    max-width:700px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #initials {
+    font-size: 20px;
+  }
+
+  #gameover {
+    text-align:center;
+    margin:0 auto;
+    margin-top: 150px;
+    min-width:100px;
+    max-width:700px;
+  }
+
+  #results{
+    text-align:center;
+    margin:0 auto;
+  }

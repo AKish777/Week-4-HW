@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Code Quiz</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Code Quiz</title>
 </head>
+
 <body>
-    <nav class="nav">
-        <button class="hscore">View Highscore</button>
-    </nav>
-
-    <h1>Code Quiz Challenge</h1>
-
-    <h4>Welcome to Code Quiz! Are you ready to test your knowledge? if so, click the "START" button! If you want to see who has the highest score simply click on "View Highscore"! Enjoy!</h4>
-
-    <div class="start">
-        <button class="start-button">START</button>
+  <div class="quiz-box">
+    <div>
+        <button class="highscore" onclick="showHighScore()">View Highscores</button>
+        <div class="timer">Time left:</div>
     </div>
 
+    <div class="rules">
+        <h2>
+            Code Quiz
+        </h2>
+        <h3>
+            Welcome to Code Quiz! Are you ready to test your knowledge? if so, click the "Start Quiz" button! If you want to see who has the highest score simply click on "View Highscore"! Enjoy!
+        </h3>
+      <button class="start">Start Quiz</button>
+    </div>
+
+    <div class="quiz">
+      <div id="question"></div>
+      <div class="choices"></div>
+      <br>
+      <div id="results"></div>
+    </div>
+
+    <div id="gameover" class="hide">
+        <h2>Quiz Complete!</h2>
+      <div class="score"></div>
+      <input id="initials" type="text" placeholder="Enter your initials" />
+      <button class="submit"onclick="highScore()">Submit</button>
+    </div>
+
+    <div class="scorelist">
+      
+        <div id="scorecard">
+        <h2>Highscores</h2>
+        <ul style="list-style-type:none;" class="list"></ul>
+      </div>
+
+      <button class="clear" onclick="clearScore()">Clear Highscores</button>
+    </div>
+
+
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
